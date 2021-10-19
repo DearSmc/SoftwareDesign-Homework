@@ -19,8 +19,7 @@ public class HealthcareWorkerTeam {
     {
         HealthcareWorker[] members = team.getMemberTeam();
         for(int i=0; i<team.getNumberOfMembers(); i++) {
-            this.memberTeam[this.numberOfMembers] = members[i];
-            this.numberOfMembers++;
+            this.addMember(members[i]);
         }
     }
 
